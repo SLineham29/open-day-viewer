@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Cardiff University Undergraduate Open Day</title>
+        <link rel='stylesheet' type='text/css' href='OpenDay.css'>
+    </head>
+
+    <body onload='onload()'>
+        <h1 id="pageTitle">Cardiff University Undergraduate Open Day</h1>
+
+        <img id='siteCoverImage' alt='Website Cover Image'>
+
+        <section id='OpenDayInfo'>
+
+        </section>
+
+        <label>Please select a subject to view:
+            <select id='subjectSelect' onchange='subjectChanged(this)'>
+                <option>Select here...</option>
+            </select>
+        </label>
+
+        <section id="subjectInfo"> 
+            <h1 id='subjectName'></h1>
+
+            <img id='subjectCoverImage' alt='Subject Cover Image' hidden='true'>
+
+            <h2 for='subjectDescription' >Description</h2>
+            <p id='subjectDescription'></p>
+
+
+            <h2 for='subjectActivities'>Available Activities</h2>
+            <section id='subjectActivities'>
+
+            </section>
+        </section>
+    </body>
+
+    <script src="OpenDay.js">
+    </script>
+</html>
